@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MasterController@index');
+Route::get('/dashboard', 'MasterController@dashboard');
